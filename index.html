@@ -12,7 +12,7 @@
 <body>
 
   <!-- NAV -->
-  <nav>
+  <nav id="nav">
     <a href="#" class="nav-name">Jack Sangster</a>
     <ul>
       <li><a href="#about">About</a></li>
@@ -26,16 +26,16 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
-      <h1>Jack<br>Sangster</h1>
+      <h1 class="hero-name serif">Jack<br>Sangster</h1>
       <div class="hero-right">
         <p class="hero-sub">
           Biochemistry graduate from Imperial College London, studying Management and Computer Science at IE Madrid.
           I work on ML models, data pipelines, financial tools, and the occasional hackathon project.
         </p>
         <div class="hero-cta">
-          <a href="#projects">Work &darr;</a>
-          <a href="https://github.com/jacksangster03" target="_blank" rel="noopener">GitHub &nearr;</a>
-          <a href="mailto:jacksangster.033@gmail.com">Email &nearr;</a>
+          <a href="#projects" class="cta-pill">Work &darr;</a>
+          <a href="https://github.com/jacksangster03" target="_blank" rel="noopener" class="cta-ghost">GitHub &nearr;</a>
+          <a href="mailto:jacksangster.033@gmail.com" class="cta-ghost">Email &nearr;</a>
         </div>
       </div>
     </div>
@@ -49,10 +49,10 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" class="reveal">
     <div class="container">
       <div class="about-grid">
-        <h2 class="serif">About</h2>
+        <h2 class="serif side-label">About</h2>
         <div class="about-body">
           <p>
             I did my undergraduate at <strong>Imperial College London</strong>, where biochemistry meant
@@ -77,18 +77,19 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
+  <section id="projects" class="reveal">
     <div class="container">
       <h2 class="serif section-heading">Projects</h2>
 
       <div class="project-list">
 
-        <a class="project-row featured-row" href="https://github.com/simplyYK/sentinel" target="_blank" rel="noopener">
+        <a class="project-row" href="https://github.com/simplyYK/sentinel" target="_blank" rel="noopener">
+          <div class="project-accent-bar"></div>
           <div class="project-num serif">01</div>
           <div class="project-info">
             <div class="project-top">
               <h3>Sentinel</h3>
-              <span class="project-award">2nd Place &middot; IE Cursor AI Hackathon 2026</span>
+              <span class="badge badge-award">2nd Place &middot; IE Cursor AI Hackathon 2026</span>
             </div>
             <p>
               Geospatial crisis navigation platform for civilians in conflict zones. Built a 3D globe dashboard
@@ -103,11 +104,12 @@
         </a>
 
         <a class="project-row" href="https://github.com/jacksangster03/smiles-iupac" target="_blank" rel="noopener">
+          <div class="project-accent-bar"></div>
           <div class="project-num serif">02</div>
           <div class="project-info">
             <div class="project-top">
               <h3>SMILES-IUPAC Translation</h3>
-              <span class="project-label">GSoC 2026 &middot; DeepChem</span>
+              <span class="badge">GSoC 2026 &middot; DeepChem</span>
             </div>
             <p>
               Seq2seq transformer for bi-directional translation between SMILES strings and IUPAC chemical names,
@@ -120,12 +122,13 @@
           <span class="project-arrow">&nearr;</span>
         </a>
 
-        <div class="project-row no-link">
+        <div class="project-row static">
+          <div class="project-accent-bar"></div>
           <div class="project-num serif">03</div>
           <div class="project-info">
             <div class="project-top">
               <h3>MatchKey</h3>
-              <span class="project-label">Accenture GenAI Mavericks Hackathon</span>
+              <span class="badge">Accenture GenAI Mavericks Hackathon</span>
             </div>
             <p>
               AI job-matching portal with HR Copilot, automated skills extraction, values-based candidate
@@ -137,12 +140,13 @@
           </div>
         </div>
 
-        <div class="project-row no-link">
+        <div class="project-row static">
+          <div class="project-accent-bar"></div>
           <div class="project-num serif">04</div>
           <div class="project-info">
             <div class="project-top">
               <h3>Tox21 Toxicity Prediction</h3>
-              <span class="project-label">ML &middot; Molecular Biology</span>
+              <span class="badge">ML &middot; Molecular Biology</span>
             </div>
             <p>
               Multitask neural network predicting molecular toxicity across 12 assays using DeepChem
@@ -159,7 +163,7 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
+  <section id="skills" class="reveal">
     <div class="container">
       <h2 class="serif section-heading">Skills</h2>
       <div class="skills-table">
@@ -215,7 +219,7 @@
   </section>
 
   <!-- EDUCATION -->
-  <section id="education">
+  <section id="education" class="reveal">
     <div class="container">
       <h2 class="serif section-heading">Education</h2>
       <div class="edu-list">
@@ -243,13 +247,21 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
-    <div class="container contact-inner">
-      <h2 class="serif">Get in touch</h2>
-      <p>Open to opportunities in pharma tech, fintech, biotech, and data roles. Particularly in Spain.</p>
-      <a href="mailto:jacksangster.033@gmail.com" class="contact-link">jacksangster.033@gmail.com &rarr;</a>
-      <div class="contact-secondary">
-        <a href="https://github.com/jacksangster03" target="_blank" rel="noopener">GitHub</a>
+  <section id="contact" class="reveal">
+    <div class="container">
+      <div class="contact-inner">
+        <h2 class="serif">Get in touch</h2>
+        <p>Open to opportunities in pharma tech, fintech, biotech, and data roles. Particularly in Spain.</p>
+        <a href="mailto:jacksangster.033@gmail.com" class="contact-link">
+          <span>jacksangster.033@gmail.com</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="contact-secondary">
+          <a href="https://github.com/jacksangster03" target="_blank" rel="noopener">
+            GitHub
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -258,6 +270,35 @@
   <footer>
     <p>Jack Sangster &middot; 2026</p>
   </footer>
+
+  <script>
+    // Scroll fade-in
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } }),
+      { threshold: 0.08 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Nav shrink on scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Active nav link
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`nav ul li a[href="#${e.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(s => io.observe(s));
+  </script>
 
 </body>
 </html>
