@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jack Sangster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">JS</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="btn-nav">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-label">Hi, I'm Jack</p>
+      <h1>Biochemist turned<br><span class="accent">builder.</span></h1>
+      <p class="hero-sub">
+        Imperial-trained biochemist, IE Madrid dual master's student (Management + CS &amp; Business Technology).
+        I work at the intersection of life sciences, data, and software.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">See my work</a>
+        <a href="https://github.com/jacksangster03" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I graduated from <strong>Imperial College London</strong> with a degree in Biochemistry,
+            where my final-year project characterised the CHKB Q328R variant using structural biology techniques
+            including cryo-EM, NMR, and PyMOL-based modelling.
+          </p>
+          <p>
+            Now at <strong>IE University in Madrid</strong>, I'm completing a dual degree in Management
+            and Computer Science &amp; Business Technology. I'm drawn to problems where biology, data, and
+            software all need to talk to each other.
+          </p>
+          <p>
+            Outside coursework I build things: geospatial crisis platforms, AI job-matching tools,
+            molecular translation models, and quant finance pipelines.
+            I'm particularly interested in roles combining quantitative skills with scientific domain knowledge
+            in <strong>fintech</strong>, <strong>pharma tech</strong>, and <strong>biotech</strong>.
+          </p>
+        </div>
+        <div class="about-facts">
+          <div class="fact">
+            <span class="fact-num">2nd</span>
+            <span class="fact-label">IE Cursor AI Hackathon 2026</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num">3+</span>
+            <span class="fact-label">Hackathon projects shipped</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num">2</span>
+            <span class="fact-label">Master's degrees in progress</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <div class="project-header">
+            <span class="project-tag">Hackathon · 2nd Place</span>
+            <div class="project-links">
+              <a href="https://github.com/simplyYK/sentinel" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </div>
+          </div>
+          <h3>Sentinel</h3>
+          <p>
+            Palantir-style geospatial crisis navigation platform for civilians in conflict zones.
+            Live conflict, flight, and seismic data layers with AI crisis assistant and crowdsourced hazard reporting.
+          </p>
+          <div class="tech-stack">
+            <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostGIS</span><span>globe.gl</span><span>Groq</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">GSoC 2026 Proposal</span>
+            <div class="project-links">
+              <a href="https://github.com/jacksangster03/smiles-iupac" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </div>
+          </div>
+          <h3>SMILES-IUPAC Translation</h3>
+          <p>
+            Seq2seq transformer for bi-directional SMILES and IUPAC chemical name translation,
+            trained on 500K+ PubChem pairs with custom tokenisers. Proposed to DeepChem (PR #4931 merged).
+          </p>
+          <div class="tech-stack">
+            <span>Python</span><span>DeepChem</span><span>PyTorch</span><span>RDKit</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Hackathon · Accenture</span>
+          </div>
+          <h3>MatchKey</h3>
+          <p>
+            AI-powered job-matching portal with HR Copilot, skills extraction, values-based matching,
+            and a multi-agent architecture. Built for the Accenture GenAI Mavericks Hackathon.
+          </p>
+          <div class="tech-stack">
+            <span>Streamlit</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>MCP</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">ML · Chemistry</span>
+          </div>
+          <h3>Tox21 Toxicity Prediction</h3>
+          <p>
+            Multitask neural network predicting molecular toxicity across 12 assays using DeepChem and MoleculeNet
+            with scaffold splitting and ROC-AUC evaluation.
+          </p>
+          <div class="tech-stack">
+            <span>Python</span><span>DeepChem</span><span>TensorFlow</span><span>MoleculeNet</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <ul>
+            <li>Python</li>
+            <li>R</li>
+            <li>TypeScript / JavaScript</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>ML / Data Science</h4>
+          <ul>
+            <li>PyTorch, TensorFlow, DeepChem</li>
+            <li>scikit-learn, XGBoost</li>
+            <li>LangChain, LangGraph</li>
+            <li>GARCH, ARIMA, Monte Carlo</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Web &amp; Infrastructure</h4>
+          <ul>
+            <li>Next.js, React</li>
+            <li>FastAPI, Streamlit</li>
+            <li>PostgreSQL, Supabase</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Science</h4>
+          <ul>
+            <li>Structural biology (cryo-EM, NMR)</li>
+            <li>Drug design, bioinformatics</li>
+            <li>PyMOL, Coot</li>
+            <li>Cheminformatics (RDKit)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 – 2027</span>
+            <h3>Dual Master's: Management + CS &amp; Business Technology</h3>
+            <p class="timeline-place">IE University, Madrid</p>
+            <p>Finance &amp; Investments concentration (Term 3). Year 2: AI, cloud, software engineering, cybersecurity.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021 – 2024</span>
+            <h3>BSc Biochemistry</h3>
+            <p class="timeline-place">Imperial College London</p>
+            <p>Final-year project: structural characterisation of the CHKB Q328R variant. Cryo-EM, NMR, PyMOL.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact-inner">
+      <h2>Let's talk.</h2>
+      <p>I'm open to opportunities in fintech, pharma tech, biotech, and data analytics. Especially roles in Spain.</p>
+      <div class="contact-links">
+        <a href="mailto:jacksangster.033@gmail.com" class="btn-primary">jacksangster.033@gmail.com</a>
+        <a href="https://github.com/jacksangster03" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Jack Sangster &middot; Built with HTML &amp; CSS &middot; Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
