@@ -16,6 +16,9 @@
 </head>
 <body>
 
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
   <!-- NAV -->
   <nav id="nav">
     <a href="#" class="nav-name">Jack Sangster</a>
@@ -32,13 +35,16 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
-      <h1 class="hero-name serif">Jack<br>Sangster</h1>
+      <h1 class="hero-name serif" aria-label="Jack Sangster">
+        <span class="hero-line"><span class="hero-word">Jack</span></span>
+        <span class="hero-line"><span class="hero-word">Sangster</span></span>
+      </h1>
       <div class="hero-right">
-        <p class="hero-sub">
+        <p class="hero-sub hero-fade">
           Biochemistry graduate from Imperial College London with equity research and consulting experience.
           I build quantitative tools, ML models, and data pipelines at the intersection of finance, science, and software.
         </p>
-        <div class="hero-cta">
+        <div class="hero-cta hero-fade">
           <a href="#projects" class="cta-pill">Work &darr;</a>
           <a href="https://github.com/jacksangster03" target="_blank" rel="noopener" class="cta-ghost">GitHub &nearr;</a>
           <a href="https://linkedin.com/in/jacksangster" target="_blank" rel="noopener" class="cta-ghost">LinkedIn &nearr;</a>
@@ -46,7 +52,7 @@
         </div>
       </div>
     </div>
-    <div class="hero-bar">
+    <div class="hero-bar hero-fade">
       <span>Biochemistry</span>
       <span class="dot">&middot;</span>
       <span>Equity Research</span>
@@ -317,6 +323,84 @@
           <span class="project-arrow">&nearr;</span>
         </a>
 
+        <a class="project-row" href="https://github.com/jacksangster03/cognix" target="_blank" rel="noopener">
+          <div class="project-accent-bar"></div>
+          <div class="project-num serif">08</div>
+          <div class="project-info">
+            <div class="project-top">
+              <h3>Cognix</h3>
+              <span class="badge">Solo &middot; In Progress</span>
+            </div>
+            <p>
+              Personal health intelligence platform synthesising wearable biometrics, manual check-ins,
+              and training logs into a deterministic daily readiness score and training mode. Local-first
+              v0.1, with planned Garmin and Oura integrations and N-of-1 supplement timing experiments.
+            </p>
+            <div class="tech-row">
+              <span>Next.js</span><span>TypeScript</span><span>Supabase</span>
+            </div>
+          </div>
+          <span class="project-arrow">&nearr;</span>
+        </a>
+
+        <a class="project-row" href="https://github.com/jacksangster03/geomadrid" target="_blank" rel="noopener">
+          <div class="project-accent-bar"></div>
+          <div class="project-num serif">09</div>
+          <div class="project-info">
+            <div class="project-top">
+              <h3>GeoMadrid</h3>
+              <span class="badge">Product</span>
+            </div>
+            <p>
+              Interactive geography quiz and atlas covering all 179 official municipalities of the
+              Community of Madrid, built as a fast, map-driven learning tool.
+            </p>
+            <div class="tech-row">
+              <span>TypeScript</span><span>Next.js</span>
+            </div>
+          </div>
+          <span class="project-arrow">&nearr;</span>
+        </a>
+
+        <a class="project-row" href="https://github.com/jacksangster03/metabolix" target="_blank" rel="noopener">
+          <div class="project-accent-bar"></div>
+          <div class="project-num serif">10</div>
+          <div class="project-info">
+            <div class="project-top">
+              <h3>Metabolix</h3>
+              <span class="badge">Bio &middot; Visualisation</span>
+            </div>
+            <p>
+              3D spatial biochemistry simulator that zooms from whole organ to individual pathway,
+              showing the lipogenesis-versus-oxidation switch flip in real time inside a fed-state liver model.
+            </p>
+            <div class="tech-row">
+              <span>Vite</span><span>React</span><span>Three.js</span><span>TypeScript</span><span>Zustand</span>
+            </div>
+          </div>
+          <span class="project-arrow">&nearr;</span>
+        </a>
+
+        <a class="project-row" href="https://github.com/jacksangster03/FIFA_WC26_Model" target="_blank" rel="noopener">
+          <div class="project-accent-bar"></div>
+          <div class="project-num serif">11</div>
+          <div class="project-info">
+            <div class="project-top">
+              <h3>FIFA WC26 Model</h3>
+              <span class="badge">Quant &middot; DataCamp Competition</span>
+            </div>
+            <p>
+              Prediction pipeline for the 2026 World Cup: source-driven team ratings combining FIFA points,
+              Elo, form, and host advantage, run through Monte Carlo simulation across all 72 group-stage
+              and 32 knockout matches.
+            </p>
+            <div class="tech-row">
+              <span>Python</span><span>Monte Carlo</span><span>Pandas</span>
+            </div>
+          </div>
+          <span class="project-arrow">&nearr;</span>
+        </a>
+
       </div>
     </div>
   </section>
@@ -437,12 +521,34 @@
   </footer>
 
   <script>
-    // Scroll reveal
+    // Hero entrance (runs once on load, not scroll-triggered)
+    window.requestAnimationFrame(() => {
+      document.querySelector('#hero').classList.add('hero-in');
+    });
+
+    // Scroll reveal with per-child stagger
+    const STAGGER_SELECTORS = '.exp-row, .project-row, .skill-row, .edu-row';
+    document.querySelectorAll('.reveal').forEach(section => {
+      const children = section.querySelectorAll(STAGGER_SELECTORS);
+      children.forEach((child, i) => {
+        child.style.transitionDelay = `${Math.min(i * 60, 480)}ms`;
+      });
+    });
+
     const revealObs = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
       { threshold: 0.07 }
     );
     document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // Scroll progress bar
+    const progress = document.getElementById('scroll-progress');
+    const updateProgress = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.width = `${max > 0 ? (window.scrollY / max) * 100 : 0}%`;
+    };
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
 
     // Nav scroll state
     const nav = document.getElementById('nav');
@@ -462,6 +568,17 @@
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
     document.querySelectorAll('section[id]').forEach(s => sectionObs.observe(s));
+
+    // Magnetic tilt on project cards
+    document.querySelectorAll('a.project-row').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - 0.5;
+        const py = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `perspective(800px) rotateX(${py * -1.4}deg) rotateY(${px * 1.4}deg) translateZ(0)`;
+      });
+      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
   </script>
 
 </body>
