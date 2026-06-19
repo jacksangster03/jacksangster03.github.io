@@ -150,6 +150,92 @@ section { padding: 7rem 0; }
 }
 
 /* ============================================================
+   ORBS / BACKGROUND VISUALS
+============================================================ */
+#orb-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0;
+  animation: orb-fade-in 2s var(--ease) forwards;
+}
+
+.orb-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.18) 0%, transparent 70%);
+  top: -180px;
+  left: -100px;
+  animation-delay: 0.3s;
+  animation: orb-fade-in 2s var(--ease) 0.3s forwards, orb-drift-1 18s ease-in-out 2.3s infinite alternate;
+}
+
+.orb-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.14) 0%, transparent 70%);
+  top: 10%;
+  right: -120px;
+  animation: orb-fade-in 2s var(--ease) 0.7s forwards, orb-drift-2 22s ease-in-out 2.7s infinite alternate;
+}
+
+.orb-3 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.1) 0%, transparent 70%);
+  bottom: 20%;
+  left: 30%;
+  animation: orb-fade-in 2s var(--ease) 1.1s forwards, orb-drift-3 26s ease-in-out 3.1s infinite alternate;
+}
+
+@keyframes orb-fade-in {
+  to { opacity: 1; }
+}
+
+@keyframes orb-drift-1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(60px, 80px) scale(1.08); }
+  66%  { transform: translate(-40px, 120px) scale(0.95); }
+  100% { transform: translate(80px, 40px) scale(1.05); }
+}
+
+@keyframes orb-drift-2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(-70px, 60px) scale(1.06); }
+  66%  { transform: translate(-30px, -80px) scale(0.92); }
+  100% { transform: translate(-90px, 40px) scale(1.1); }
+}
+
+@keyframes orb-drift-3 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(50px, -60px) scale(1.12); }
+  100% { transform: translate(-60px, 40px) scale(0.9); }
+}
+
+/* Subtle gradient mesh on body */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(6, 182, 212, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 90% 100%, rgba(99, 102, 241, 0.05) 0%, transparent 60%);
+}
+
+/* Ensure all content sits above orbs */
+nav, #scroll-progress, section, footer { position: relative; z-index: 1; }
+
+/* ============================================================
    HERO
 ============================================================ */
 #hero {
@@ -158,6 +244,8 @@ section { padding: 7rem 0; }
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 clamp(1.25rem, 5vw, 3rem);
+  position: relative;
+  z-index: 1;
 }
 
 .hero-inner {
