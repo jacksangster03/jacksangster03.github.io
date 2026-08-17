@@ -476,7 +476,7 @@ nav, #scroll-progress, section, footer { position: relative; z-index: 1; }
 .project-row {
   position: relative;
   display: grid;
-  grid-template-columns: 6px 56px 1fr auto;
+  grid-template-columns: 6px 1fr auto;
   gap: 0 1.75rem;
   padding: 2.25rem 1rem;
   border-bottom: 1px solid var(--border);
@@ -491,7 +491,6 @@ nav, #scroll-progress, section, footer { position: relative; z-index: 1; }
 a.project-row { cursor: pointer; will-change: transform; transition: background 0.2s var(--ease), transform 0.2s var(--ease); }
 a.project-row:hover { background: var(--surface); }
 a.project-row:hover .project-accent-bar { opacity: 1; transform: scaleY(1); }
-a.project-row:hover .project-num { color: var(--accent); }
 a.project-row:hover .project-arrow { color: var(--accent); transform: translate(3px, -3px); }
 
 .project-accent-bar {
@@ -781,8 +780,61 @@ footer {
 
 @media (max-width: 640px) {
   nav ul { display: none; }
-  .project-row { grid-template-columns: 6px 40px 1fr; }
+  .project-row { grid-template-columns: 6px 1fr; }
   .project-arrow { display: none; }
   .skill-row { grid-template-columns: 1fr; gap: 0.4rem; }
   .skill-cat { margin-bottom: 0.1rem; }
+}
+
+/* ============================================================
+   PROJECT HIERARCHY & DOMAIN BADGES
+============================================================ */
+
+/* Hero-tier cards: larger padding + title */
+.project-row--hero {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.project-row--hero h3 {
+  font-size: 1.3rem;
+}
+
+/* Domain label: subtle outline tag distinct from award badge */
+.badge-domain {
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--border-mid);
+  border-radius: 3px;
+  padding: 2px 7px;
+  font-weight: 500;
+}
+
+/* More projects toggle button */
+.more-projects-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 2rem 0 1.5rem;
+  padding: 0.5rem 1.25rem;
+  background: transparent;
+  border: 1px solid var(--border-mid);
+  border-radius: 2rem;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.more-projects-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Collapsible wrapper */
+.more-projects-section.hidden {
+  display: none;
 }

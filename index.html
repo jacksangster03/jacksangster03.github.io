@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jack Sangster — Biochemistry graduate from Imperial College London, equity research analyst, and ML engineer. Dual Master's at IE Madrid in Management and Computer Science." />
+  <meta name="description" content="Jack Sangster — Building AI systems where scientific reasoning, quantitative analysis and real-world decisions intersect. Imperial College London · IE Madrid." />
   <meta property="og:title" content="Jack Sangster" />
-  <meta property="og:description" content="Biochemistry, finance, and software. Dual Master's candidate at IE Madrid." />
+  <meta property="og:description" content="Building AI systems where scientific reasoning, quantitative analysis and real-world decisions intersect." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jacksangster03.github.io" />
   <title>Jack Sangster</title>
@@ -48,8 +48,7 @@
       </h1>
       <div class="hero-right">
         <p class="hero-sub hero-fade">
-          Biochemistry graduate from Imperial College London with equity research and consulting experience.
-          I build quantitative tools, ML models, and data pipelines at the intersection of finance, science, and software.
+          Building AI systems where scientific reasoning, quantitative analysis and real-world decisions intersect.
         </p>
         <div class="hero-cta hero-fade">
           <a href="#projects" class="cta-pill">Work &darr;</a>
@@ -60,11 +59,11 @@
       </div>
     </div>
     <div class="hero-bar hero-fade">
-      <span>Biochemistry</span>
+      <span>Imperial College London</span>
       <span class="dot">&middot;</span>
-      <span>Equity Research</span>
+      <span>IE Madrid</span>
       <span class="dot">&middot;</span>
-      <span>Machine Learning</span>
+      <span>AI Systems</span>
       <span class="dot">&middot;</span>
       <span>Madrid</span>
     </div>
@@ -77,19 +76,10 @@
         <h2 class="serif side-label">About</h2>
         <div class="about-body">
           <p>
-            At <strong>Imperial College London</strong> biochemistry meant protein structures, wet lab, mass spectrometers,
-            and R scripts. My final-year project characterised the CHKB Q328R variant using cryo-EM, NMR, and PyMOL.
-            Outside the lab I was running corporate relations for the <strong>Imperial Finance Society</strong>, growing
-            membership to 1,000+ students while doing equity research at Queen's Tower Capital.
-          </p>
-          <p>
-            Now at <strong>IE University</strong> in Madrid, I'm doing a dual degree in Management (Finance &amp; Investments
-            concentration) and Computer Science &amp; Business Technology. The pairing is deliberate: I want to work in roles
-            where quantitative depth, scientific literacy, and the ability to build things all matter at once.
-          </p>
-          <p>
-            I'm targeting roles in <strong>pharma tech</strong>, <strong>fintech</strong>, and <strong>biotech</strong>
-            where analytical rigour and technical execution aren't separate jobs.
+            At <strong>Imperial College London</strong> biochemistry meant protein structures, cryo-EM, and NMR.
+            Now at <strong>IE University</strong> in Madrid I build AI systems — for AstraZeneca oncology, Amazon logistics,
+            weather forecasting, and training intelligence. The common thread: quantitative depth and scientific literacy
+            applied to problems that require both.
           </p>
         </div>
       </div>
@@ -194,17 +184,86 @@
 
       <div class="project-list">
 
+        <!-- HERO TIER: top 3 projects -->
+
+        <div class="project-row project-row--hero">
+          <div class="project-accent-bar"></div>
+          <div class="project-info">
+            <div class="project-top">
+              <h3>Argo</h3>
+              <span class="badge badge-award">1st Place &middot; 240+ students</span>
+              <span class="badge">IE &times; Amazon Shipping Industry Challenge 2026</span>
+              <span class="badge badge-domain">Enterprise AI</span>
+            </div>
+            <p>
+              AI deal desk for Amazon Shipping Enterprise BD. Ingests any mix of RFQs, CRM notes, emails,
+              and spreadsheets into a canonical Opportunity Profile. Deterministic serviceability engine
+              maps requirements against a capability matrix; pricing engine produces <strong>3 margin scenarios</strong>
+              with finance guardrails; logistic win-probability model trained on <strong>360 historical deals</strong>.
+              Generates executive summary, risk assessment, commercial strategy, and a branded client-ready PPTX proposal.
+            </p>
+            <div class="tech-row">
+              <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>pgvector</span><span>OpenRouter</span><span>RAG</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row project-row--hero">
+          <div class="project-accent-bar"></div>
+          <div class="project-info">
+            <div class="project-top">
+              <h3>RepMint</h3>
+              <span class="badge badge-award">1st Place &middot; 240+ students</span>
+              <span class="badge">IE AI Module Demo Day 2026</span>
+              <span class="badge badge-domain">Human Performance AI</span>
+            </div>
+            <p>
+              AI camera coach for goal-based training. In-browser pose estimation (MediaPipe, <strong>33-point full-body model</strong>)
+              with rep counting, form scoring, ROM/tempo/time-under-tension tracking, and per-rep live cues.
+              AI plan generator builds week-by-week programmes. <strong>115-exercise library</strong> across tier-1 full camera
+              coaching, tier-2 rep counting, and tier-3 manual logging. Session logging and insights dashboard;
+              AI coach grounded in training history.
+            </p>
+            <div class="tech-row">
+              <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>MediaPipe</span><span>OpenRouter</span><span>Deno</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row project-row--hero">
+          <div class="project-accent-bar"></div>
+          <div class="project-info">
+            <div class="project-top">
+              <h3>SEIL &mdash; Scientific Engagement Intelligence Layer</h3>
+              <span class="badge badge-award">2nd Place &middot; 130+ participants &middot; AstraZeneca Spain</span>
+              <span class="badge badge-domain">Enterprise AI</span>
+            </div>
+            <p>
+              AI-governed RAG platform for AstraZeneca Spain's oncology HCP engagement. Classifies every query
+              by topic, intent, risk, and compliance route before retrieval, routing across <strong>7 compliance pathways</strong>;
+              generates demand intelligence from every interaction. Scored <strong>4.9 vs 3.6</strong> vs AZ Engage Copilot
+              on weighted selection matrix. Financial model: &euro;93K Y1 net investment, cash-flow positive Y2,
+              &euro;1.1M cumulative 3-year FCF.
+            </p>
+            <div class="tech-row">
+              <span>Vite</span><span>React</span><span>TypeScript</span><span>Tailwind</span><span>Zustand</span><span>Recharts</span><span>RAG</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- STANDARD FEATURED PROJECTS -->
+
         <a class="project-row" href="https://sentinel-omega-three.vercel.app/intel" target="_blank" rel="noopener">
           <div class="project-accent-bar"></div>
-          <div class="project-num serif">01</div>
           <div class="project-info">
             <div class="project-top">
               <h3>Sentinel</h3>
               <span class="badge badge-award">2nd Place &middot; 300+ competitors</span>
+              <span class="badge badge-domain">Enterprise AI</span>
             </div>
             <p>
               Geospatial crisis navigation platform for civilians in conflict zones, built in 24 hours.
-              3D globe dashboard with live conflict, flight, and seismic data layers (ACLED, OpenSky, USGS),
+              3D globe dashboard with <strong>3 live data layers</strong> — conflict (ACLED), flight (OpenSky), and seismic (USGS) —
               AI crisis assistant powered by Groq, and crowdsourced hazard reporting via Supabase with PostGIS.
             </p>
             <div class="tech-row">
@@ -214,203 +273,19 @@
           <span class="project-arrow">&nearr;</span>
         </a>
 
-        <div class="project-row">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">02</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>Argo</h3>
-              <span class="badge badge-award">1st Place &middot; 240+ students</span>
-              <span class="badge">IE &times; Amazon Shipping Industry Challenge 2026</span>
-            </div>
-            <p>
-              AI deal desk for Amazon Shipping Enterprise BD. Ingests any mix of RFQs, CRM notes, emails,
-              and spreadsheets into a canonical Opportunity Profile. Deterministic serviceability engine
-              maps requirements against a capability matrix; pricing engine produces three margin scenarios
-              with finance guardrails; logistic win-probability model trained on 360 historical deals.
-              Generates executive summary, risk assessment, commercial strategy, and a branded client-ready
-              PPTX proposal.
-            </p>
-            <div class="tech-row">
-              <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>pgvector</span><span>OpenRouter</span><span>RAG</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-row">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">03</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>RepMint</h3>
-              <span class="badge badge-award">1st Place &middot; 240+ students</span>
-              <span class="badge">IE AI Module Demo Day 2026</span>
-            </div>
-            <p>
-              AI camera coach for goal-based training. In-browser pose estimation (MediaPipe, 33-point
-              full-body model) with rep counting, form scoring, ROM/tempo/time-under-tension tracking,
-              and per-rep live cues. AI plan generator builds week-by-week programmes. 115-exercise library
-              with tier-1 full camera coaching, tier-2 rep counting, and tier-3 manual logging. Session
-              logging and insights dashboard via Supabase; AI coach grounded in training history.
-            </p>
-            <div class="tech-row">
-              <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>MediaPipe</span><span>OpenRouter</span><span>Deno</span>
-            </div>
-          </div>
-        </div>
-
-        <a class="project-row" href="https://github.com/jacksangster03/smiles-iupac" target="_blank" rel="noopener">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">04</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>SMILES-IUPAC Translation</h3>
-              <span class="badge">GSoC 2026 &middot; DeepChem</span>
-            </div>
-            <p>
-              Seq2seq transformer for bi-directional translation between SMILES strings and IUPAC chemical names,
-              trained on 500K+ PubChem compound pairs with custom tokenisers. PR #4931 merged to DeepChem.
-            </p>
-            <div class="tech-row">
-              <span>Python</span><span>DeepChem</span><span>PyTorch</span><span>RDKit</span><span>PubChem API</span>
-            </div>
-          </div>
-          <span class="project-arrow">&nearr;</span>
-        </a>
-
-        <div class="project-row">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">05</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>MatchKey</h3>
-              <span class="badge">Accenture GenAI Mavericks Hackathon</span>
-            </div>
-            <p>
-              AI job-matching portal with HR Copilot, automated skills extraction, values-based candidate
-              matching, and a multi-agent backend architecture built on MCP.
-            </p>
-            <div class="tech-row">
-              <span>Streamlit</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>MCP</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-row">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">06</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>Tox21 Toxicity Prediction</h3>
-              <span class="badge">ML &middot; Molecular Biology</span>
-            </div>
-            <p>
-              Multitask neural network predicting molecular toxicity across 12 assays using DeepChem and
-              MoleculeNet, with scaffold splitting and ROC-AUC evaluation across the Tox21 benchmark.
-            </p>
-            <div class="tech-row">
-              <span>Python</span><span>DeepChem</span><span>TensorFlow</span><span>MoleculeNet</span>
-            </div>
-          </div>
-        </div>
-
-        <a class="project-row" href="https://github.com/jacksangster03/Briefly" target="_blank" rel="noopener">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">07</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>Briefly</h3>
-              <span class="badge">Solo &middot; In Progress</span>
-            </div>
-            <p>
-              Portfolio-aware market intelligence platform delivering morning briefs, pre-open intraday
-              setup, and event-driven breaking alerts. Monitors holdings, screens macroeconomic signals,
-              and pushes summaries via Telegram and email on a live schedule.
-            </p>
-            <div class="tech-row">
-              <span>Python</span><span>Telegram Bot API</span><span>Alpha Vantage</span><span>yfinance</span><span>FRED</span>
-            </div>
-          </div>
-          <span class="project-arrow">&nearr;</span>
-        </a>
-
-        <a class="project-row" href="https://github.com/jacksangster03/offscript" target="_blank" rel="noopener">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">08</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>OffScript</h3>
-              <span class="badge">Product &middot; Speaking Training</span>
-            </div>
-            <p>
-              Speaking simulator built for freeze resilience, not generic polish. Users speak to a timed
-              prompt under pressure; OpenAI Whisper transcribes the session and timing metrics are computed
-              from word timestamps. The core drill targets the specific failure mode of blanking mid-sentence
-              and not recovering.
-            </p>
-            <div class="tech-row">
-              <span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Supabase</span><span>OpenAI Whisper</span>
-            </div>
-          </div>
-          <span class="project-arrow">&nearr;</span>
-        </a>
-
-        <a class="project-row" href="https://github.com/jacksangster03/ArcadiaTechRoulette" target="_blank" rel="noopener">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">09</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>Arcadia</h3>
-              <span class="badge">GDG IE Tech Roulette &middot; 2026</span>
-              <span class="badge">Google Finalist &middot; Top 9 of 32 Teams</span>
-            </div>
-            <p>
-              Hidden secret-society platform with puzzle-gated entry, ritual access mechanics, symbolic
-              encrypted communications, and a complete live demo journey. Users solve a layered challenge
-              to earn access to each society. Built for IE University's GDG Tech Roulette competition;
-              selected as Google finalist (top 9 of 32 teams).
-            </p>
-            <div class="tech-row">
-              <span>TypeScript</span><span>Next.js</span>
-            </div>
-          </div>
-          <span class="project-arrow">&nearr;</span>
-        </a>
-
-        <a class="project-row" href="https://github.com/jacksangster03/cognix" target="_blank" rel="noopener">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">10</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>Cognix</h3>
-              <span class="badge">Solo &middot; In Progress</span>
-            </div>
-            <p>
-              Personal health intelligence platform synthesising wearable biometrics, manual check-ins,
-              and training logs into a deterministic daily readiness score and training mode. Local-first
-              v0.1, with planned Garmin and Oura integrations and N-of-1 supplement timing experiments.
-            </p>
-            <div class="tech-row">
-              <span>Next.js</span><span>TypeScript</span><span>Supabase</span>
-            </div>
-          </div>
-          <span class="project-arrow">&nearr;</span>
-        </a>
-
         <a class="project-row" href="https://github.com/jacksangster03/atmospheric-intelligence" target="_blank" rel="noopener">
           <div class="project-accent-bar"></div>
-          <div class="project-num serif">11</div>
           <div class="project-info">
             <div class="project-top">
               <h3>atmospheric-intelligence</h3>
               <span class="badge">Solo &middot; In Progress</span>
+              <span class="badge badge-domain">Scientific Intelligence</span>
             </div>
             <p>
-              Physics-informed ML post-processing of NWP forecasts to correct systematic local errors for
-              Madrid and central Spain. Ingests Open-Meteo (IFS, AIFS, ICON-EU), ECMWF Open Data, and
-              AEMET observations into DuckDB. Custom meteorological feature engineering (dew-point tendency,
-              LCL height, VPD, wind encoding). LightGBM bias-correction layer with SHAP explainability.
-              FastAPI backend; Next.js dashboard.
+              Physics-informed ML post-processing of NWP forecasts to correct systematic local errors for Madrid
+              and central Spain. Ingests <strong>3 NWP model sources</strong> (IFS, AIFS, ICON-EU), ECMWF Open Data, and AEMET
+              observations into DuckDB. Custom meteorological feature engineering; LightGBM bias-correction layer
+              with SHAP explainability; <strong>39 unit tests</strong>. FastAPI backend; Next.js dashboard.
             </p>
             <div class="tech-row">
               <span>Python</span><span>LightGBM</span><span>FastAPI</span><span>Next.js</span><span>DuckDB</span><span>Open-Meteo</span><span>AEMET</span>
@@ -419,98 +294,38 @@
           <span class="project-arrow">&nearr;</span>
         </a>
 
-        <a class="project-row" href="https://github.com/jacksangster03/geomadrid" target="_blank" rel="noopener">
+        <a class="project-row" href="https://github.com/jacksangster03/smiles-iupac" target="_blank" rel="noopener">
           <div class="project-accent-bar"></div>
-          <div class="project-num serif">12</div>
           <div class="project-info">
             <div class="project-top">
-              <h3>GeoMadrid</h3>
-              <span class="badge">Product</span>
+              <h3>SMILES-IUPAC Translation</h3>
+              <span class="badge">GSoC 2026 &middot; DeepChem</span>
+              <span class="badge badge-domain">Scientific Intelligence</span>
             </div>
             <p>
-              Interactive geography quiz and atlas covering all 179 official municipalities of the
-              Community of Madrid, built as a fast, map-driven learning tool.
+              Seq2seq transformer for bi-directional translation between SMILES strings and IUPAC chemical names,
+              trained on <strong>500K+ PubChem compound pairs</strong> with custom tokenisers. PR #4931 merged to DeepChem.
             </p>
             <div class="tech-row">
-              <span>TypeScript</span><span>Next.js</span>
+              <span>Python</span><span>DeepChem</span><span>PyTorch</span><span>RDKit</span><span>PubChem API</span>
             </div>
           </div>
           <span class="project-arrow">&nearr;</span>
         </a>
-
-        <a class="project-row" href="https://github.com/jacksangster03/metabolix" target="_blank" rel="noopener">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">13</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>Metabolix</h3>
-              <span class="badge">Bio &middot; Visualisation</span>
-            </div>
-            <p>
-              3D spatial biochemistry simulator that zooms from whole organ to individual pathway,
-              showing the lipogenesis-versus-oxidation switch flip in real time inside a fed-state liver model.
-            </p>
-            <div class="tech-row">
-              <span>Vite</span><span>React</span><span>Three.js</span><span>TypeScript</span><span>Zustand</span>
-            </div>
-          </div>
-          <span class="project-arrow">&nearr;</span>
-        </a>
-
-        <a class="project-row" href="https://github.com/jacksangster03/FIFA_WC26_Model" target="_blank" rel="noopener">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">14</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>FIFA WC26 Model</h3>
-              <span class="badge">Quant &middot; DataCamp Competition</span>
-            </div>
-            <p>
-              Prediction pipeline for the 2026 World Cup: source-driven team ratings combining FIFA points,
-              Elo, form, and host advantage, run through Monte Carlo simulation across all 72 group-stage
-              and 32 knockout matches.
-            </p>
-            <div class="tech-row">
-              <span>Python</span><span>Monte Carlo</span><span>Pandas</span>
-            </div>
-          </div>
-          <span class="project-arrow">&nearr;</span>
-        </a>
-
-        <div class="project-row">
-          <div class="project-accent-bar"></div>
-          <div class="project-num serif">15</div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>SEIL &mdash; Scientific Engagement Intelligence Layer</h3>
-              <span class="badge badge-award">Runners-up &middot; 130+ participants &middot; AstraZeneca Spain</span>
-            </div>
-            <p>
-              AI-governed RAG platform for AstraZeneca Spain's oncology HCP engagement. Classifies every
-              query by topic, intent, risk, and compliance route before retrieval, routes to one of 7
-              pathways, and generates demand intelligence from every interaction. Scored 4.9 vs 3.6 (AZ
-              Engage Copilot) on weighted selection matrix. Financial model: &euro;93K Y1 net investment,
-              cash-flow positive Y2, &euro;1.1M cumulative 3-year FCF. Built in IE MIM Tech Impact Lab.
-            </p>
-            <div class="tech-row">
-              <span>Vite</span><span>React</span><span>TypeScript</span><span>Tailwind</span><span>Zustand</span><span>Recharts</span><span>RAG</span>
-            </div>
-          </div>
-        </div>
 
         <a class="project-row" href="https://github.com/jacksangster03/pharma-brief-automations" target="_blank" rel="noopener">
           <div class="project-accent-bar"></div>
-          <div class="project-num serif">16</div>
           <div class="project-info">
             <div class="project-top">
               <h3>Pharma Brief Automations</h3>
               <span class="badge">Pharma &middot; Agentic &middot; Live</span>
+              <span class="badge badge-domain">Enterprise AI</span>
             </div>
             <p>
               Scheduled agentic pipelines delivering daily pharma and biotech intelligence briefs.
-              Covers oncology, peptide/GLP-1, neuro/CNS, and AI drug discovery. Sources: FDA.gov,
-              SEC EDGAR, ClinicalTrials.gov, PubMed, bioRxiv. Separate automation tracks FDA catalyst
-              calendars with PDUFA dates, AdCom votes, and binary event classification.
+              Covers oncology, peptide/GLP-1, neuro/CNS, and AI drug discovery. Draws from <strong>5 live data sources</strong>:
+              FDA.gov, SEC EDGAR, ClinicalTrials.gov, PubMed, bioRxiv. Separate pipeline tracks FDA catalyst
+              calendars with PDUFA dates, AdCom votes, and binary event classification. Running daily.
             </p>
             <div class="tech-row">
               <span>Agentic Pipelines</span><span>FDA API</span><span>PubMed</span><span>HTML Email</span>
@@ -518,6 +333,181 @@
           </div>
           <span class="project-arrow">&nearr;</span>
         </a>
+
+        <a class="project-row" href="https://github.com/jacksangster03/Briefly" target="_blank" rel="noopener">
+          <div class="project-accent-bar"></div>
+          <div class="project-info">
+            <div class="project-top">
+              <h3>Briefly</h3>
+              <span class="badge">Solo &middot; In Progress</span>
+              <span class="badge badge-domain">Enterprise AI</span>
+            </div>
+            <p>
+              Portfolio-aware market intelligence platform delivering morning briefs, pre-open intraday setup,
+              and event-driven breaking alerts. Monitors holdings, screens macroeconomic signals, and pushes
+              summaries via Telegram and email on a live schedule.
+            </p>
+            <div class="tech-row">
+              <span>Python</span><span>Telegram Bot API</span><span>Alpha Vantage</span><span>yfinance</span><span>FRED</span>
+            </div>
+          </div>
+          <span class="project-arrow">&nearr;</span>
+        </a>
+
+        <a class="project-row" href="https://github.com/jacksangster03/cognix" target="_blank" rel="noopener">
+          <div class="project-accent-bar"></div>
+          <div class="project-info">
+            <div class="project-top">
+              <h3>Cognix</h3>
+              <span class="badge">Solo &middot; In Progress</span>
+              <span class="badge badge-domain">Human Performance AI</span>
+            </div>
+            <p>
+              Personal health intelligence platform synthesising wearable biometrics, manual check-ins,
+              and training logs into a deterministic daily readiness score and training mode. Local-first v0.1,
+              with planned Garmin and Oura integrations and N-of-1 supplement timing experiments.
+            </p>
+            <div class="tech-row">
+              <span>Next.js</span><span>TypeScript</span><span>Supabase</span>
+            </div>
+          </div>
+          <span class="project-arrow">&nearr;</span>
+        </a>
+
+        <!-- MORE PROJECTS TOGGLE -->
+
+        <button class="more-projects-toggle" aria-expanded="false">&#9662; More projects</button>
+
+        <div class="more-projects-section hidden" aria-hidden="true">
+
+          <a class="project-row" href="https://github.com/jacksangster03/offscript" target="_blank" rel="noopener">
+            <div class="project-accent-bar"></div>
+            <div class="project-info">
+              <div class="project-top">
+                <h3>OffScript</h3>
+                <span class="badge">Product &middot; Speaking Training</span>
+              </div>
+              <p>
+                Speaking simulator built for freeze resilience, not generic polish. Users speak to a timed
+                prompt under pressure; OpenAI Whisper transcribes the session and timing metrics are computed
+                from word timestamps.
+              </p>
+              <div class="tech-row">
+                <span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Supabase</span><span>OpenAI Whisper</span>
+              </div>
+            </div>
+            <span class="project-arrow">&nearr;</span>
+          </a>
+
+          <a class="project-row" href="https://github.com/jacksangster03/ArcadiaTechRoulette" target="_blank" rel="noopener">
+            <div class="project-accent-bar"></div>
+            <div class="project-info">
+              <div class="project-top">
+                <h3>Arcadia</h3>
+                <span class="badge">Google Finalist &middot; Top 9 of 32 Teams</span>
+              </div>
+              <p>
+                Hidden secret-society platform with puzzle-gated entry, ritual access mechanics, and symbolic
+                encrypted communications. Built for IE University's GDG Tech Roulette competition; selected as
+                Google finalist (top 9 of 32 teams).
+              </p>
+              <div class="tech-row">
+                <span>TypeScript</span><span>Next.js</span>
+              </div>
+            </div>
+            <span class="project-arrow">&nearr;</span>
+          </a>
+
+          <a class="project-row" href="https://github.com/jacksangster03/metabolix" target="_blank" rel="noopener">
+            <div class="project-accent-bar"></div>
+            <div class="project-info">
+              <div class="project-top">
+                <h3>Metabolix</h3>
+                <span class="badge">Bio &middot; Visualisation</span>
+              </div>
+              <p>
+                3D spatial biochemistry simulator zooming from whole organ to individual pathway, showing the
+                lipogenesis-versus-oxidation switch flip in real time inside a fed-state liver model.
+              </p>
+              <div class="tech-row">
+                <span>Vite</span><span>React</span><span>Three.js</span><span>TypeScript</span><span>Zustand</span>
+              </div>
+            </div>
+            <span class="project-arrow">&nearr;</span>
+          </a>
+
+          <a class="project-row" href="https://github.com/jacksangster03/geomadrid" target="_blank" rel="noopener">
+            <div class="project-accent-bar"></div>
+            <div class="project-info">
+              <div class="project-top">
+                <h3>GeoMadrid</h3>
+                <span class="badge">Product</span>
+              </div>
+              <p>
+                Interactive geography quiz and atlas covering all 179 official municipalities of the
+                Community of Madrid, built as a fast, map-driven learning tool.
+              </p>
+              <div class="tech-row">
+                <span>TypeScript</span><span>Next.js</span>
+              </div>
+            </div>
+            <span class="project-arrow">&nearr;</span>
+          </a>
+
+          <a class="project-row" href="https://github.com/jacksangster03/FIFA_WC26_Model" target="_blank" rel="noopener">
+            <div class="project-accent-bar"></div>
+            <div class="project-info">
+              <div class="project-top">
+                <h3>FIFA WC26 Model</h3>
+                <span class="badge">Quant &middot; DataCamp Competition</span>
+              </div>
+              <p>
+                Prediction pipeline for the 2026 World Cup: source-driven team ratings combining FIFA points,
+                Elo, form, and host advantage, run through Monte Carlo simulation across all 72 group-stage
+                and 32 knockout matches.
+              </p>
+              <div class="tech-row">
+                <span>Python</span><span>Monte Carlo</span><span>Pandas</span>
+              </div>
+            </div>
+            <span class="project-arrow">&nearr;</span>
+          </a>
+
+          <div class="project-row">
+            <div class="project-accent-bar"></div>
+            <div class="project-info">
+              <div class="project-top">
+                <h3>MatchKey</h3>
+                <span class="badge">Accenture GenAI Mavericks Hackathon</span>
+              </div>
+              <p>
+                AI job-matching portal with HR Copilot, automated skills extraction, values-based candidate
+                matching, and a multi-agent backend architecture built on MCP.
+              </p>
+              <div class="tech-row">
+                <span>Streamlit</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>MCP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-row">
+            <div class="project-accent-bar"></div>
+            <div class="project-info">
+              <div class="project-top">
+                <h3>Tox21 Toxicity Prediction</h3>
+                <span class="badge">ML &middot; Molecular Biology</span>
+              </div>
+              <p>
+                Multitask neural network predicting molecular toxicity across 12 assays using DeepChem and
+                MoleculeNet, with scaffold splitting and ROC-AUC evaluation across the Tox21 benchmark.
+              </p>
+              <div class="tech-row">
+                <span>Python</span><span>DeepChem</span><span>TensorFlow</span><span>MoleculeNet</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /more-projects-section -->
 
       </div>
     </div>
@@ -531,17 +521,22 @@
 
         <div class="skill-row">
           <span class="skill-cat">Programming</span>
-          <span class="skill-vals">Python &middot; R &middot; SQL &middot; TypeScript / JavaScript &middot; MATLAB</span>
+          <span class="skill-vals">Python &middot; R &middot; SQL &middot; TypeScript / JavaScript</span>
         </div>
 
         <div class="skill-row">
           <span class="skill-cat">ML &amp; Data</span>
-          <span class="skill-vals">PyTorch &middot; TensorFlow &middot; DeepChem &middot; scikit-learn &middot; Pandas &middot; NumPy &middot; Matplotlib &middot; GARCH &middot; ARIMA &middot; Monte Carlo &middot; GNN</span>
+          <span class="skill-vals">PyTorch &middot; TensorFlow &middot; DeepChem &middot; scikit-learn &middot; LightGBM &middot; SHAP &middot; Pandas &middot; NumPy &middot; DuckDB &middot; GARCH &middot; ARIMA &middot; Monte Carlo &middot; GNN</span>
         </div>
 
         <div class="skill-row">
           <span class="skill-cat">AI Engineering</span>
-          <span class="skill-vals">LangChain &middot; LangGraph &middot; RAG &middot; ChromaDB &middot; MCP &middot; Agentic Systems &middot; Anthropic API &middot; OpenAI API</span>
+          <span class="skill-vals">LangChain &middot; LangGraph &middot; RAG &middot; pgvector &middot; ChromaDB &middot; MCP &middot; Agentic Systems &middot; Anthropic API &middot; OpenAI API</span>
+        </div>
+
+        <div class="skill-row">
+          <span class="skill-cat">Computer Vision</span>
+          <span class="skill-vals">MediaPipe &middot; OpenCV</span>
         </div>
 
         <div class="skill-row">
@@ -691,6 +686,25 @@
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
     document.querySelectorAll('section[id]').forEach(s => sectionObs.observe(s));
+
+    // More projects toggle
+    const moreToggle = document.querySelector('.more-projects-toggle');
+    const moreSection = document.querySelector('.more-projects-section');
+    if (moreToggle && moreSection) {
+      moreToggle.addEventListener('click', () => {
+        const expanded = moreToggle.getAttribute('aria-expanded') === 'true';
+        moreToggle.setAttribute('aria-expanded', String(!expanded));
+        moreSection.classList.toggle('hidden');
+        moreToggle.textContent = expanded ? '▾ More projects' : '▴ Hide';
+        moreSection.setAttribute('aria-hidden', String(expanded));
+        // Re-run stagger on newly revealed cards
+        if (!expanded) {
+          moreSection.querySelectorAll('.project-row').forEach((child, i) => {
+            child.style.transitionDelay = `${Math.min(i * 60, 480)}ms`;
+          });
+        }
+      });
+    }
 
     // Magnetic tilt on project cards
     document.querySelectorAll('a.project-row').forEach(card => {
