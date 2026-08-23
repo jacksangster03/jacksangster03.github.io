@@ -516,7 +516,7 @@ a.project-row:hover .project-arrow { color: var(--accent); transform: translate(
   grid-column: 2;
 }
 
-.project-info { grid-column: 3; }
+.project-info { grid-column: 2; }
 
 .project-top {
   display: flex;
